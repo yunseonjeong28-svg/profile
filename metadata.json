@@ -1,0 +1,6 @@
+{
+  "name": "MY CREATIVE JOURNEY — 윤선의 AI 크리에이티브 스튜디오",
+  "description": "AI 크리에이터 윤선의 포트폴리오. 애니메이션, 동화, 뮤직비디오, 여행 영상, 브랜딩 디자인 등 상상을 작품으로 빚어내는 크리에이티브 스튜디오.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

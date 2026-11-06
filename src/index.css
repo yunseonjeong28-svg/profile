@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-bg: #F8F5EF;
+    --color-charcoal: #343137;
+    --color-lavender: #D8CBE8;
+    --color-blush: #EBCFD0;
+    --color-gold: #C8B792;
+  }
+
+  body {
+    font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    background-color: #F8F5EF;
+    color: #343137;
+  }
+}
+
+.font-serif-display {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.font-sans-kr {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+}
+
+@keyframes gentle-pan {
+  0%, 100% {
+    transform: scale(1.05) translate(0, 0);
+  }
+  50% {
+    transform: scale(1.1) translate(-1.5%, -1%);
+  }
+}
+
+.animate-gentle-pan {
+  animation: gentle-pan 24s ease-in-out infinite alternate;
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 7s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-gentle-pan,
+  .animate-float-slow,
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
